@@ -7,70 +7,79 @@
     body {color:red;
         font-style:italic;
         font-family:"Times New Roman";
-        line-height: 40px;
-        text-align:center;}
-    p{
-        margin-top:5px;
-        margin-bottom:5px;
-        margin-right:5px;
-        margin-left:5px;
-        padding-top:5px;
-        padding-bottom:5px;
-        padding-right:5px;
-        padding-left:5px;
-        position:relative;
-        left:-20px;
-
-    } 
-    h1{
-        margin-top:3px;
-        margin-bottom:3px;
-        margin-right:3px;
-        margin-left:3px;
-        padding-top:3px;
-        padding-bottom:3px;
-        padding-right:3px;
-        padding-left:3px;
-        border-style:solid;
-        border-width:5px;
-        position:fixed;
-        top:10px;
-        left:5%;
-        
+        text-align: center;
+        }
     
-    } 
-    h2{
-        float:left;
-        margin:5px;
+
+
+    .grid-container {
+        display: grid;
+        grid: 400px / auto auto;
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        }
+
+    .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
     }
+
     a:link    {color:green;}
     a:visited {color:green;}
     a:hover   {color:red;}
     a:active  {color:yellow;}
+    #item1
+{
+
+	justify-content: center;
+    align-items: center; 
+	display:flex;
+}
+    #item2
+{
+
+	justify-content: left; ; 
+    align-items: baseline; 
+	display:flex;
+}
+
+
 </style>
 </head>
 <body>
-    <article>
-        <h1>Personal information</h1>
-        <p>Hey guys!I am Yuang Fan, and you can call me Jeremy. I am a twenty-two year old student from China.</p>
-        <h2>My educational experience</h2>
-        <p>Currently I am a first year student of Master of science in information of UW-Madison.Before, 
-        I completed my undergraduate studies in China and my major was financial technology.I have learned 
-        some courses about programming and math and I want to learn more things about computer science, user interface design and 
-        data science in my master degree</p>
-        <h2>My hobbies</h2>
-        <p>In my spare time, I prefer sports. I go to the gym about three times a week. Besides, sometimes I play basketball.
-        Moreover, I am also interested in soccer,football and swimming.
-        </p>
-        <h2>Restaurants in Madison I like to eat in</h2>
-        <ol>
-            <li><a href="another.html">FUGU</a></li>
-            <li>Taiwan Little Eats</li>
-            <li>Kung Fu Tea</li>
-        </ol>
-    </article>
-    <aside>
-        <p>Thank you and look forward to becoming friends with you！</p>
-    </aside>   
+    
+        <div class="grid-container">
+            <div id="item1">
+            <h1>Personal information</h1>
+            <p>Hey guys!I am Yuang Fan, and you can call me Jeremy. I am a twenty-two year old student from China.</p>
+            </div>
+            <div id="item1">
+            <h2>My educational experience</h2>
+            <p>Currently I am a first year student of Master of science in information of UW-Madison.Before, 
+            I completed my undergraduate studies in China and my major was financial technology.I have learned 
+            some courses about programming and math and I want to learn more things about computer science, user interface design and 
+            data science in my master degree</p>
+            </div>
+            <div id="item2">
+            <h2>My hobbies</h2>
+            <p>In my spare time, I prefer sports. I go to the gym about three times a week. Besides, sometimes I play basketball.
+            Moreover, I am also interested in soccer,football and swimming.
+            </p>
+            </div>
+            <div id="item2">
+            <h2>Restaurants in Madison I like to eat in</h2>
+            <ol>
+                <li><a href="another.html">FUGU</a></li>
+                <li>Taiwan Little Eats</li>
+                <li>Kung Fu Tea</li>
+            </ol>
+            </div>
+        </div>
+       
+  
+      
 </body>
 </html>
